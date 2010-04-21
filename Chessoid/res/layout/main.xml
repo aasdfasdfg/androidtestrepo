@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chessBoard"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:shrinkColumns="8">
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="a8"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="2"
+            android:text="b8"
+            android:padding="3dip" />       
+        <TextView
+            android:layout_column="3"
+            android:text="c8"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="4"
+            android:text="d8"
+            android:padding="3dip" />  
+        <TextView
+            android:layout_column="5"
+            android:text="e8"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="6"
+            android:text="f8"
+            android:padding="3dip" />  
+        <TextView
+            android:layout_column="7"
+            android:text="g8"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="8"
+            android:text="h8"
+            android:padding="3dip" />       
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="a7"
+            android:padding="3dip"
+            />
+        <TextView
+            android:layout_column="2"
+            android:text="b7"
+            android:padding="3dip"
+            android:background="#ffffff"  />       
+        <TextView
+            android:layout_column="3"
+            android:text="c7"
+            android:padding="3dip"
+             />
+        <TextView
+            android:layout_column="4"
+            android:text="d7"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+        <TextView
+            android:layout_column="5"
+            android:text="e7"
+            android:padding="3dip"
+             />
+        <TextView
+            android:layout_column="6"
+            android:text="f7"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+        <TextView
+            android:layout_column="7"
+            android:text="g7"
+            android:padding="3dip"/>
+        
+        <TextView
+        	android:layout_column="8"
+            android:text="h7"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+       </TableRow>
+           <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="a6"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="2"
+            android:text="b6"
+            android:padding="3dip" />       
+        <TextView
+            android:layout_column="3"
+            android:text="c6"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="4"
+            android:text="d6"
+            android:padding="3dip" />  
+        <TextView
+            android:layout_column="5"
+            android:text="e6"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="6"
+            android:text="f6"
+            android:padding="3dip" />  
+        <TextView
+            android:layout_column="7"
+            android:text="g6"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="8"
+            android:text="h6"
+            android:padding="3dip" />       
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="a5"
+            android:padding="3dip"
+            />
+        <TextView
+            android:layout_column="2"
+            android:text="b5"
+            android:padding="3dip"
+            android:background="#ffffff"  />       
+        <TextView
+            android:layout_column="3"
+            android:text="c5"
+            android:padding="3dip"
+             />
+        <TextView
+            android:layout_column="4"
+            android:text="d5"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+        <TextView
+            android:layout_column="5"
+            android:text="e5"
+            android:padding="3dip"
+             />
+        <TextView
+            android:layout_column="6"
+            android:text="f5"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+        <TextView
+            android:layout_column="7"
+            android:text="g5"
+            android:padding="3dip"/>
+        
+        <TextView
+        	android:layout_column="8"
+            android:text="h5"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+       </TableRow>
+           <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="a4"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="2"
+            android:text="b4"
+            android:padding="3dip" />       
+        <TextView
+            android:layout_column="3"
+            android:text="c4"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="4"
+            android:text="d4"
+            android:padding="3dip" />  
+        <TextView
+            android:layout_column="5"
+            android:text="e4"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="6"
+            android:text="f4"
+            android:padding="3dip" />  
+        <TextView
+            android:layout_column="7"
+            android:text="g4"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="8"
+            android:text="h4"
+            android:padding="3dip" />       
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="a3"
+            android:padding="3dip"
+            />
+        <TextView
+            android:layout_column="2"
+            android:text="b3"
+            android:padding="3dip"
+            android:background="#ffffff"  />       
+        <TextView
+            android:layout_column="3"
+            android:text="c3"
+            android:padding="3dip"
+             />
+        <TextView
+            android:layout_column="4"
+            android:text="d3"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+        <TextView
+            android:layout_column="5"
+            android:text="e3"
+            android:padding="3dip"
+             />
+        <TextView
+            android:layout_column="6"
+            android:text="f3"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+        <TextView
+            android:layout_column="7"
+            android:text="g3"
+            android:padding="3dip"/>
+        
+        <TextView
+        	android:layout_column="8"
+            android:text="h3"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+       </TableRow>
+           <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="a2"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="2"
+            android:text="b2"
+            android:padding="3dip" />       
+        <TextView
+            android:layout_column="3"
+            android:text="c2"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="4"
+            android:text="d2"
+            android:padding="3dip" />  
+        <TextView
+            android:layout_column="5"
+            android:text="e2"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="6"
+            android:text="f2"
+            android:padding="3dip" />  
+        <TextView
+            android:layout_column="7"
+            android:text="g2"
+            android:padding="3dip"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_column="8"
+            android:text="h2"
+            android:padding="3dip" />       
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="a1"
+            android:padding="3dip"
+            />
+        <TextView
+            android:layout_column="2"
+            android:text="b1"
+            android:padding="3dip"
+            android:background="#ffffff"  />       
+        <TextView
+            android:layout_column="3"
+            android:text="c1"
+            android:padding="3dip"
+             />
+        <TextView
+            android:layout_column="4"
+            android:text="d1"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+        <TextView
+            android:layout_column="5"
+            android:text="e1"
+            android:padding="3dip"
+             />
+        <TextView
+            android:layout_column="6"
+            android:text="f1"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+        <TextView
+            android:layout_column="7"
+            android:text="g1"
+            android:padding="3dip"/>
+        
+        <TextView
+        	android:layout_column="8"
+            android:text="h1"
+            android:padding="3dip"
+            android:background="#ffffff" />  
+       </TableRow>
+</TableLayout>
