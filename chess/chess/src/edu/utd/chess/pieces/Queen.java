@@ -5,6 +5,11 @@ import edu.utd.chess.board.ChessCoords;
 import edu.utd.chess.exceptions.IllegalMoveException;
 import edu.utd.chess.exceptions.InvalidCoordsException;
 
+/**
+ * The queen chess piece.
+ * @author troy
+ *
+ */
 public class Queen extends ChessPiece {
 
     public Queen(String alignment, ChessCoords location) {
@@ -15,6 +20,7 @@ public class Queen extends ChessPiece {
      * Queen can move any number of steps forward,
      * backward, or diagonally.
      * @see ChessPiece#validateMove(ChessCoords)
+     * @param coords target coordinates on the chess board
      * @throws InvalidCoordsException
      * @throws IllegalMoveException
      */

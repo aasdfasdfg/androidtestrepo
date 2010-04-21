@@ -5,6 +5,11 @@ import edu.utd.chess.board.ChessCoords;
 import edu.utd.chess.exceptions.IllegalMoveException;
 import edu.utd.chess.exceptions.InvalidCoordsException;
 
+/**
+ * The knight chess piece.
+ * @author troy
+ *
+ */
 public class Knight extends ChessPiece {
 
     public Knight(String alignment, ChessCoords location) {
@@ -15,6 +20,10 @@ public class Knight extends ChessPiece {
      * Knights can move x=(=/-)2,y=(+/-)1 or 
      * x=(+/-)1,y=(+/-)2 places
      * from their current location.
+     * @param coords target coordinates on the chess board
+     * @throws InvalidCoordsException supplied coords are invalid
+	 * @throws IllegalMoveException if this piece is not
+	 * allowed to move in this way. 
      */
     @Override
     public void validateMove(ChessCoords coords) 

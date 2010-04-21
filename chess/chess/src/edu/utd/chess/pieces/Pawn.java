@@ -4,6 +4,7 @@ import edu.utd.chess.board.ChessCoords;
 import edu.utd.chess.exceptions.CoordsOccupiedException;
 import edu.utd.chess.exceptions.IllegalMoveException;
 import edu.utd.chess.exceptions.InvalidCoordsException;
+import edu.utd.chess.game.ChessGame;
 
 /**
  * The pawn chess piece.
@@ -11,13 +12,22 @@ import edu.utd.chess.exceptions.InvalidCoordsException;
  *
  */
 public class Pawn extends ChessPiece {
-	private boolean firstMove = true; 
+	private boolean firstMove = true;
 	
 	public Pawn(String alignment, ChessCoords location) {
 		super(alignment, location);
 	}
 	
-
+	/**
+	 * Pawns can only move forward one space, except on their
+	 * first move when they can optionally move two spaces.
+	 * Pawns must move diagonally when capturing, but cannot
+	 * move diagonally unless capturing.
+	 * @see ChessPiece#validateMove(ChessCoords)
+	 * @param coords target coordinates on the chess board
+	 * @throws InvalidCoordsException
+	 * @throws IllegalMoveException
+	 */
 	@Override
 	public void validateMove(ChessCoords coords) 
 	    throws
@@ -25,14 +35,14 @@ public class Pawn extends ChessPiece {
 	        IllegalMoveException
 	{	    
 	    super.validateMove(coords);
-		//pawns can only move straight ahead
+		//pawns can only move straight ahead unless capturing
 	    if (this.location.column != coords.column) {
-	        //TODO : a pawn can move diagonally only if it's capturing
-	        //another piece.  Implement this.
-	        //TODO : add more logic here, can only be diff by 1,
-	        //and only if the target coord is occupied by an enemy
-	        //need to decide how we'll implement capture first
-	        throw new IllegalMoveException();
+	    	ChessPiece piece = ChessGame.INSTANCE.getChessBoard().getChessPieceAt(coords);
+	    	if (null == piece) {
+	    		//if we're trying to move diagonally and there is nothing to try
+	    		//and capture, then it's an illegal move
+	        	throw new IllegalMoveException();
+	    	}
 	    }
 	    //can't move backwards
 	    if (coords.row < this.location.row) {
